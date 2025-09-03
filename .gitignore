@@ -1,0 +1,12 @@
+# Секреты и сессии
+.env
+*.session
+afk_log.txt
+
+# Python кеши
+__pycache__/
+*.pyc
+
+# Остальное (если нужно)
+.vscode/
+venv/
