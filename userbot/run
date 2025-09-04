@@ -1,0 +1,4 @@
+#!/data/data/com.termux/files/usr/bin/sh
+cd ~/afk-userbot
+exec python3 userbot.pyhmod +x userbot/run
+

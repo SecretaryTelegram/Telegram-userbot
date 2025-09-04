@@ -2,11 +2,9 @@
 .env
 *.session
 afk_log.txt
+userbot.log
 
-# Python кеши
+# Python служебное
 __pycache__/
 *.pyc
-
-# Остальное (если нужно)
-.vscode/
 venv/
