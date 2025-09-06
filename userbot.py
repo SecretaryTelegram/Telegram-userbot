@@ -8,9 +8,13 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 # ===============================
 # Данные для подключения
 # ===============================
-API_ID = 21321325
-API_HASH = "93e7c730ce8992e378b2225471f2f860"
-SESSION_NAME = "afk_userbot"
+import os
+
+API_ID = int(os.getenv("API_ID"))
+API_HASH = os.getenv("API_HASH")
+SESSION_NAME = os.getenv("SESSION_NAME", "afk_userbot")
+
+app = Client(SESSION_NAME, api_id=API_ID, api_hash=API_HASH)
 
 # ===============================
 # Файлы для хранения данных
